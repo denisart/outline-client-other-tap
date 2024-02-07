@@ -16,7 +16,7 @@
 :: See https://ss64.com/nt/delayedexpansion.html
 setlocal enabledelayedexpansion
 
-set DEVICE_NAME=outline-tap0
+set DEVICE_NAME=outline-tap1
 set DEVICE_HWID=tap0901
 
 :: Error codes for surfacing to the user and sentry.
