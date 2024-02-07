@@ -66,7 +66,7 @@ namespace OutlineService
         private const string EVENT_LOG_NAME = "Application";
         // Must be kept in sync with the Electron code.
         private const string PIPE_NAME = "OutlineServicePipe";
-        private const string TAP_DEVICE_NAME = "outline-tap0";
+        private const string TAP_DEVICE_NAME = "outline-tap1";
         private const string TAP_DEVICE_IP = "10.0.85.1";
 
         private const string ACTION_CONFIGURE_ROUTING = "configureRouting";
