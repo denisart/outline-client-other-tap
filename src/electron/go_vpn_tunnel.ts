@@ -27,7 +27,7 @@ import {VpnTunnel} from './vpn_tunnel';
 const isLinux = platform() === 'linux';
 const isWindows = platform() === 'win32';
 
-const TUN2SOCKS_TAP_DEVICE_NAME = isLinux ? 'outline-tun0' : 'outline-tap0';
+const TUN2SOCKS_TAP_DEVICE_NAME = isLinux ? 'outline-tun0' : 'outline-tap1';
 const TUN2SOCKS_TAP_DEVICE_IP = '10.0.85.2';
 const TUN2SOCKS_VIRTUAL_ROUTER_IP = '10.0.85.1';
 const TUN2SOCKS_VIRTUAL_ROUTER_NETMASK = '255.255.255.0';
@@ -226,7 +226,7 @@ class GoTun2socks {
 
   async start(isUdpEnabled: boolean): Promise<void> {
     // ./tun2socks.exe \
-    //   -tunName outline-tap0 -tunDNS 1.1.1.1,9.9.9.9 \
+    //   -tunName outline-tap1 -tunDNS 1.1.1.1,9.9.9.9 \
     //   -tunAddr 10.0.85.2 -tunGw 10.0.85.1 -tunMask 255.255.255.0 \
     //   -proxyHost 127.0.0.1 -proxyPort 1080 -proxyPassword mypassword \
     //   -proxyCipher chacha20-ietf-poly1035
